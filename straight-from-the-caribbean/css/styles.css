@@ -1,0 +1,211 @@
+h1 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 900;
+    font-size: 2.5rem;
+    color: #444444;
+    text-align: center;
+}
+
+h3 {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #444444;
+    text-align: left;
+}
+
+body {
+    background-color: #FFFCE5;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+nav {
+    padding: 3rem;
+}
+
+div {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+p {}
+
+
+/* ------------ CLASS STYLING ------------ */
+
+.tape-head {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    background-color: #444444;
+    color: white;
+    padding: 0 16px;
+}
+
+
+/* ------------ NAV BAR STYLING -------------*/
+
+.nav-title {
+    margin: 0 auto;
+    padding: 0 0;
+}
+
+.links {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0px;
+    gap: 10px;
+    text-transform: uppercase;
+}
+
+.links a {
+    font-family: 'Red Hat Mono', monospace;
+    font-weight: 400;
+    font-size: 1.25rem;
+    color: #444444;
+    padding: .5rem;
+}
+
+/* Add an active class to highlight the current page */
+.links a.active {
+    color: #90A9B7;
+}
+
+/* Hide the link that should open and close the topnav on small screens */
+.links .icon {
+    display: none;
+}
+
+
+.links a:hover {
+    background-color: #444444;
+    color: #A5C5A1;
+    text-decoration: underline;
+    text-decoration-thickness: 3px;
+    transition: .1; /* Animation */
+}
+
+
+/* ------------ SLIDESHOW STYLING ------------ */
+
+.video {
+    padding: 1rem 2rem;
+}
+
+.streaming-btn {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 0.1rem .5rem 2rem;
+    color: #444444;
+}
+
+.stream-btn {
+    margin: 0 .5rem;
+}
+
+.stream-btn:hover{
+    color: #A5C5A1;
+    transition: .2s; /* Animation */
+}
+
+.stream-link {
+    font-family: 'Red Hat Mono', monospace;
+    color: #444444;
+    transition: .3s; /* Animation */
+}
+
+.stream-link:hover {
+    color: #A5C5A1;
+}
+
+.fa {
+    margin: 0 0 0 7px;
+}
+
+.vertical-separator {
+    height: 16px;
+    width: 1px;
+    background-color: #444444;
+    margin: 0;
+}
+
+.slide-dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 .2rem;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+}
+
+/* ALBUM INFO */
+
+.album{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+
+.album-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.album-description {
+    font-family: 'roboto', sans-serif;
+    margin: .5rem;
+}
+
+.tracklist {
+    display: flex;
+    flex-direction: column;
+}
+
+.text {
+    font-family: 'Roboto', sans-serif;
+    font-weight: 400;
+    color: #444444;
+}
+
+.album-art {
+    width: 240px;
+    box-shadow: 4px 4px #444444;
+    margin: 2rem;
+    transition: transform .2s; /* Animation */
+}
+
+.album-art:hover {
+    transform: scale(1.05);
+    animation-duration: 1s;
+}
+
+.box {
+    padding: 1rem;
+}
+
+/* FOOTER */
+
+.socials {
+    padding: 2rem;
+}
+
+.icon {
+    margin: .25rem;
+    color: #444444;
+}
+
+.icon:hover{
+    color: #A5C5A1
+}
