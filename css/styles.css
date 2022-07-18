@@ -70,6 +70,7 @@ div {
     font-size: 1.25rem;
     color: #444444;
     padding: .5rem;
+    transition: 0.2s;
 }
 
 /* Add an active class to highlight the current page */
@@ -87,7 +88,7 @@ div {
     color: #72946e;
     text-decoration: underline;
     text-decoration-thickness: 3px;
-    transition: .1;
+    transition: 0.2s ease;
     /* Animation */
 }
 
@@ -135,7 +136,7 @@ div {
     display: flex;
     justify-content: center;
     align-items: center;
-
+    transition: 0.2s
 }
 
 .stream-link:hover {
@@ -178,6 +179,7 @@ div {
 .album-info {
     display: flex;
     flex-direction: column;
+    margin: 5rem 0;
 }
 
 .album-description {
@@ -200,12 +202,14 @@ div {
     width: 240px;
     box-shadow: 4px 4px #444444;
     margin: 2rem;
-    transition: transform .2s;
+    transition:.2s;
 }
 
 .album-art:hover {
     transform: scale(1.05);
     animation-duration: 1s;
+    box-shadow: 6px 6px #444444;
+    transition: 0.2s;
 }
 
 .box {
@@ -218,7 +222,7 @@ footer {
     display: flex;
     flex-direction: column;
     align-items: center;
-    padding: 2.5rem;
+    padding: 3rem;
 
 }
 
@@ -234,8 +238,10 @@ footer {
     font-size: 1.1rem;
     margin: .25rem;
     color: #444444;
+    transition: 0.2s
 }
 
 .icon:hover {
-    color: #A5C5A1
+    color: #A5C5A1;
+    transition: 0.2s;
 }
