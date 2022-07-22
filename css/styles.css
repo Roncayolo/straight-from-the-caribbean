@@ -383,8 +383,12 @@ footer {
         padding: 0 0 2rem;
     }
 
+    .footer-socials {
+        margin: 0;
+        padding: 0 35px;
+    }
     .footer-icon {
         padding: 2rem 0;
-        font-size: 2rem;
+        font-size: 1.7rem;
     }
 }
