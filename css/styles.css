@@ -1,8 +1,9 @@
 /* TAG STYLING */
 
 body {
-    margin: 0;
     padding: 0;
+    margin: 0;
+
 }
 
 h1 {
@@ -56,6 +57,7 @@ a {
     background-color: #444444;
     color: white;
     padding: 0 16px;
+    text-align: center;
 }
 
 
@@ -73,15 +75,8 @@ a {
     padding: 0 0;
 }
 
-.nav-item {}
 
-.video {
-    width: 100%;
-    padding: 35px;
-    display: flex;
-    justify-content: center;
 
-}
 
 .nav-links {
     display: flex;
@@ -111,7 +106,7 @@ a {
 .burger-menu {
     display: none;
     color: #444444;
-    font-size: 45px;
+    font-size: 40px;
 }
 
 
@@ -126,8 +121,15 @@ a {
 
 /* ------------ SLIDESHOW STYLING ------------ */
 
-.video {
-    padding: 1rem 2rem;
+.video-container {
+    display: flex;
+    width: 100%;
+    margin: auto;
+    padding: 30px;
+}
+
+.video-item {
+    margin: 0 auto;
 }
 
 .slide-btn {
@@ -136,7 +138,7 @@ a {
     color: #4444447e;
 }
 
-.streaming-links {
+/* .streaming-links {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -145,6 +147,10 @@ a {
     color: #444444;
     height: 64px;
     width: auto;
+} */
+
+.streaming-links-mobile {
+    display: none;
 }
 
 .stream-btn {
@@ -210,11 +216,12 @@ a {
     display: flex;
     flex-direction: column;
     margin: 5rem 0;
+    text-align: center;
 }
 
 .album-description {
     font-family: 'roboto', sans-serif;
-    margin: .5rem;
+    margin: 10px;
 }
 
 .tracklist {
@@ -262,9 +269,16 @@ footer {
     font-size: .75rem;
     color: #444444;
     margin: .25rem;
+    text-align: center;
+    margin: 5px auto;
 }
 
-.icon {
+.footer-socials {
+    padding: 1em;
+    margin: 0 auto;
+}
+
+.footer-icon {
     font-size: 1.1rem;
     margin: .25rem;
     color: #444444;
@@ -299,30 +313,78 @@ footer {
         padding: 10px 40px;
         display: flex;
         flex-direction: row;
-        justify-content: space-between;
-        
         align-items: center;
     }
 
     .nav-links {
-        padding:1rem;
+        padding: 1rem 40px;
+        margin: 0;
         background-color: #CFEDCB;
         flex-direction: column;
     }
-    .nav-child {
-        text-align: right;
-    }
 
-    .nav-item .a {
+    .nav-link {
+        width: 100%;
         display: flex;
         justify-content: end;
-        text-align: left;
-    }
-    .nav-item {
-        justify-content: space-between;
     }
 
     .burger-menu {
         display: flex;
+    }
+
+    .video-item {
+        margin: 0 auto;
+        padding: 0;
+        height: 45.05vw;
+        width: 80vw;
+    }
+
+    .streaming-links-desktop {
+        display: none;
+    }
+
+    .streaming-links-mobile {
+        margin: 0 auto;
+        padding: 0 30px;
+        display: flex;
+        justify-content: space-between;
+        flex-wrap: wrap;
+    }
+
+    .fa {
+        margin: 0 8px;
+    }
+    
+    .album-info {
+        margin: 2em auto;
+    }
+
+    .cd-container {
+        display: flex;
+        flex-direction: column-reverse;
+        padding: 0 35px;
+    }
+
+    .album-art {
+        width: 100%;
+        margin: 0;
+    }
+
+    .album-art:hover {
+        transform: none;
+    }
+
+    .tracklist {
+        padding: 2rem 0 0;
+    }
+
+    footer {
+        padding: 0 0 2rem;
+    }
+
+    .footer-icon {
+        padding: 2rem 0;
+        font-size: 2rem;
     }
 }

@@ -19,8 +19,9 @@
         href="https://fonts.googleapis.com/css2?family=Red+Hat+Mono:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600;1,700&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://kit.fontawesome.com/5552020e94.js" crossorigin="anonymous"></script>
 </head>
-<script src="https://kit.fontawesome.com/5552020e94.js" crossorigin="anonymous"></script>
+
 
 <body>
     <!--[if lt IE 7]>
@@ -40,16 +41,16 @@
         </div>
 
         <div class="nav-links">
-            <a class="active nav-item nav-child" href="#home">Home</a>
+            <a class="active nav-item nav-link" href="#home">Home</a>
             <span class="dot">•</span>
-            <a class="nav-item" href="https://songwhip.com/ooyah">Music</a>
+            <a class="nav-item nav-link" href="https://songwhip.com/ooyah">Music</a>
             <span class="dot">•</span>
-            <a class="nav-item" href="https://store.straightfromthecaribbean.com/">Drumkits</a>
+            <a class="nav-item nav-link" href="https://store.straightfromthecaribbean.com/">Drumkits</a>
             <span class="dot">•</span>
-            <a class="nav-item" href="#socials">Socials</a>
+            <a class="nav-item nav-link" href="#socials">Socials</a>
             <span class="dot">•</span>
-            <a class="nav-item" href="https://discord.gg/nJYDhWM9NS">DISCORD</a>
-            
+            <a class="nav-item nav-link" href="https://discord.gg/nJYDhWM9NS">DISCORD</a>
+
         </div>
     </nav>
 
@@ -65,17 +66,23 @@
 
         <!-- <a class="slide-btn prev fas fa-angle-left" onclick="plusSlides(-1)"></a> -->
 
-        <div class="video"><iframe width="560" height="315" src="https://www.youtube.com/embed/scPxtWXPUUg"
+        <div class="video-container">
+
+            <iframe class="video-item" width="560" height="315" src="https://www.youtube.com/embed/scPxtWXPUUg"
                 title="YouTube video player" frameborder="0"
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                allowfullscreen></iframe>
+                allowfullscreen>
+            </iframe>
+
         </div>
 
         <!-- <a class="slide-btn next fas fa-angle-right" onclick="plusSlides(1)"></a> -->
 
     </div>
-
-    <div class="streaming-links flex-container">
+    
+    
+    <!-- STREAMING LINKS DESKTOP VERSION  -->
+    <div class="streaming-links-desktop flex-container">
 
         <div class="stream-btn flex-item">
             <a class="stream-link" href="https://ooyah.bandcamp.com/">Bandcamp <i class="fa fab fa-bandcamp"></i></a>
@@ -106,6 +113,31 @@
 
 
 
+    <!-- STREAMING LINKS MOBILE VERSION  -->
+    <div class="streaming-links-mobile">
+        <div class="stream-btn flex-item">
+            <a class="stream-link" href="https://ooyah.bandcamp.com/"><i class="fa fab fa-bandcamp"></i>Bandcamp</a>
+        </div>
+
+        <div class="stream-btn flex-item">
+            <a class="stream-link"
+                href="https://open.spotify.com/artist/7HlOu1Pmw4TIa1jxlsTebi?si=37cccc284dd64736">Spotify <i
+                    class="fa fab fa-spotify"></i></a>
+        </div>
+
+        <div class="stream-btn flex-item">
+            <a class="stream-link" href="https://itunes.apple.com/ca/artist/ooyah/1383190405"><i
+                    class="fa fab fa-apple"></i>Apple Music </a>
+        </div>
+
+        <div class="stream-btn flex-item">
+            <a class="stream-link" href="https://songwhip.com/ooyah">Others <i class="fa fa-external-link-alt"></i></a>
+        </div>
+
+
+    </div>
+
+
     <!-- The dots/circles 
     <div style="text-align:center">
         <span class="slide-dot" onclick="currentSlide(1)"></span>
@@ -127,7 +159,7 @@
             <p class="album-description flex-item">with production from StillRobb, ZMO, Ties, Premes & Kyyhky.</p>
         </div>
 
-        <div class="cd box album-container">
+        <div class="cd-container box album-container">
             <div class="tracklist">
                 <h3>Tracklist</h3>
                 <ol class="text">
@@ -151,21 +183,22 @@
 
 
 
-    <!-- Socials -->
+    <!-- Footer & Socials -->
 
 
 
 
 
     <footer>
-        <div id="socials" class="socials">
-            <a href="https://www.youtube.com/c/ooyah"><img class="icon fab fa-youtube fa-fw" src="" alt=""></a>
-            <a href="https://www.instagram.com/itsooyah"><img class="icon fab fa-instagram fa-fw" src="" alt=""></a>
-            <a href="https://www.twitter.com/itsooyah"><img class="icon fab fa-twitter fa-fw" src="" alt=""></a>
-            <a href="https://ooyah.bandcamp.com/"><img class="icon fab fa-bandcamp fa-fw" src="" alt=""></a>
+        <div id="socials" class="footer-socials">
+            <a href="https://www.youtube.com/c/ooyah"><img class="footer-icon fab fa-youtube fa-fw" src="" alt=""></a>
+            <a href="https://www.instagram.com/itsooyah"><img class="footer-icon fab fa-instagram fa-fw" src="" alt=""></a>
+            <a href="https://www.twitter.com/itsooyah"><img class="footer-icon fab fa-twitter fa-fw" src="" alt=""></a>
+            <a href="https://www.facebook.com/itsooyah"><img class="footer-icon fab fa-facebook fa-fw" src="" alt=""></a>
+            <a href="https://ooyah.bandcamp.com/"><img class="footer-icon fab fa-bandcamp fa-fw" src="" alt=""></a>
             <a href="https://open.spotify.com/artist/7HlOu1Pmw4TIa1jxlsTebi?si=37cccc284dd64736"><img
-                    class="icon fab fa-spotify fa-fw" src="" alt=""></a>
-            <a href="https://itunes.apple.com/ca/artist/ooyah/1383190405"><img class="icon fab fa-apple fa-fw" src=""
+                    class="footer-icon fab fa-spotify fa-fw" src="" alt=""></a>
+            <a href="https://itunes.apple.com/ca/artist/ooyah/1383190405"><img class="footer-icon fab fa-apple fa-fw" src=""
                     alt=""></a>
         </div>
 
