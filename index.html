@@ -28,26 +28,28 @@
         <![endif]-->
 
 
-
     <!-- NAVBAR -->
 
-    <nav>
+    <nav class="nav">
+
         <div class="nav-title">
-            <h1 class="nav-title">Straight From The Caribbean</h1>
-        </div>
-        <div class="links">
-            <a class="active" href="#home">Home</a>
-            <span class="dot">•</span>
-            <a href="https://songwhip.com/ooyah">Music</a>
-            <span class="dot">•</span>
-            <a href="https://store.straightfromthecaribbean.com/">Drumkits</a>
-            <span class="dot">•</span>
-            <a href="#socials">Socials</a>
-            <span class="dot">•</span>
-            <a href="https://discord.gg/nJYDhWM9NS">DISCORD</a>
-            <a href="javascript:void(0);" class="icon" onclick="myFunction()">
+            <h1 class="title nav-item">Straight From The Caribbean</h1>
+            <a href="javascript:void(0);" class="burger-menu nav-item" onclick="myFunction()">
                 <i class="fa fa-bars"></i>
             </a>
+        </div>
+
+        <div class="nav-links">
+            <a class="active nav-item nav-child" href="#home">Home</a>
+            <span class="dot">•</span>
+            <a class="nav-item" href="https://songwhip.com/ooyah">Music</a>
+            <span class="dot">•</span>
+            <a class="nav-item" href="https://store.straightfromthecaribbean.com/">Drumkits</a>
+            <span class="dot">•</span>
+            <a class="nav-item" href="#socials">Socials</a>
+            <span class="dot">•</span>
+            <a class="nav-item" href="https://discord.gg/nJYDhWM9NS">DISCORD</a>
+            
         </div>
     </nav>
 
@@ -59,7 +61,7 @@
 
 
 
-    <div class="latest-release">
+    <div class="latest-release flex-container">
 
         <!-- <a class="slide-btn prev fas fa-angle-left" onclick="plusSlides(-1)"></a> -->
 
@@ -73,15 +75,15 @@
 
     </div>
 
-    <div class="streaming-links">
+    <div class="streaming-links flex-container">
 
-        <div class="stream-btn">
+        <div class="stream-btn flex-item">
             <a class="stream-link" href="https://ooyah.bandcamp.com/">Bandcamp <i class="fa fab fa-bandcamp"></i></a>
         </div>
 
         <span class="vertical-separator"></span>
 
-        <div class="stream-btn">
+        <div class="stream-btn flex-item">
             <a class="stream-link"
                 href="https://open.spotify.com/artist/7HlOu1Pmw4TIa1jxlsTebi?si=37cccc284dd64736">Spotify <i
                     class="fa fab fa-spotify"></i></a>
@@ -89,14 +91,14 @@
 
         <span class="vertical-separator"></span>
 
-        <div class="stream-btn">
+        <div class="stream-btn flex-item">
             <a class="stream-link" href="https://itunes.apple.com/ca/artist/ooyah/1383190405">Apple Music <i
                     class="fa fab fa-apple"></i></a>
         </div>
 
         <span class="vertical-separator"></span>
 
-        <div class="stream-btn">
+        <div class="stream-btn flex-item">
             <a class="stream-link" href="https://songwhip.com/ooyah">Others <i class="fa fa-external-link-alt"></i></a>
         </div>
 
@@ -117,15 +119,15 @@
 
 
 
-    <div class="album">
-        <div class="album-info box">
-            <h2 class="tape-head">Sex Love & Other Drugs</h2>
-            <p class="album-description">A 10 song debut album by OOYAH.</p>
-            <p class="album-description">All songs were written, recorded and performed by OOYAH</p>
-            <p class="album-description">with production from StillRobb, ZMO, Ties, Premes & Kyyhky.</p>
+    <div class="album flex-container">
+        <div class="album-info box album-container">
+            <h2 class="album-title">Sex Love & Other Drugs</h2>
+            <p class="album-description flex-item">A 10 song debut album by OOYAH.</p>
+            <p class="album-description flex-item">All songs were written, recorded and performed by OOYAH</p>
+            <p class="album-description flex-item">with production from StillRobb, ZMO, Ties, Premes & Kyyhky.</p>
         </div>
 
-        <div class="cd box">
+        <div class="cd box album-container">
             <div class="tracklist">
                 <h3>Tracklist</h3>
                 <ol class="text">
@@ -167,11 +169,6 @@
                     alt=""></a>
         </div>
 
-        <div class="links">
-            <a href="https://discord.gg/nJYDhWM9NS">Discord</a>
-            <span class="vertical-separator"></span>
-            <a href="https://songwhip.com/ooyah">Music</a>
-        </div>
         <p class="footer-text">Copyright © 2022 straightfromthecaribbean.com</p>
         <p class="footer-text">All rights reserved.</p>
     </footer>

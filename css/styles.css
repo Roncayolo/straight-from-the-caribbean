@@ -1,8 +1,15 @@
+/* TAG STYLING */
+
+body {
+    margin: 0;
+    padding: 0;
+}
+
 h1 {
     font-family: 'Roboto', sans-serif;
     text-transform: uppercase;
     font-weight: 900;
-    font-size: 2.5rem;
+    font-size: 2.5em;
     color: #444444;
     text-align: center;
 }
@@ -21,24 +28,29 @@ body {
 
 a {
     text-decoration: none;
-
 }
 
-nav {
-    padding: 3rem;
-}
 
-div {
+/* CLASS STYLING */
+
+.flex-container {
     display: flex;
-    flex-direction: row;
-    justify-content: center;
+    flex-wrap: wrap;
     align-items: center;
+    justify-content: center;
+    flex-direction: row;
+}
+
+.flex-item {
+    display: flex;
+    justify-content: center;
+    align-content: center;
 }
 
 
-/* ------------ CLASS STYLING ------------ */
 
-.tape-head {
+/* This is the black background white text on top thing. */
+.album-title {
     font-family: 'Roboto', sans-serif;
     font-weight: 400;
     background-color: #444444;
@@ -47,14 +59,31 @@ div {
 }
 
 
-/* ------------ NAV BAR STYLING -------------*/
+/* ------------ NAV BAR -------------*/
+
+.nav {
+    padding: 3rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
 
 .nav-title {
     margin: 0 auto;
     padding: 0 0;
 }
 
-.links {
+.nav-item {}
+
+.video {
+    width: 100%;
+    padding: 35px;
+    display: flex;
+    justify-content: center;
+
+}
+
+.nav-links {
     display: flex;
     flex-direction: row;
     justify-content: center;
@@ -64,7 +93,7 @@ div {
     text-transform: uppercase;
 }
 
-.links a {
+.nav-links a {
     font-family: 'Red Hat Mono', monospace;
     font-weight: 400;
     font-size: 1.25rem;
@@ -79,8 +108,10 @@ div {
 }
 
 /* Hide the link that should open and close the topnav on small screens */
-.links .icon {
+.burger-menu {
     display: none;
+    color: #444444;
+    font-size: 45px;
 }
 
 
@@ -169,12 +200,11 @@ div {
 
 /* ALBUM INFO */
 
-.album {
+.album-container {
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    align-items: center;
 }
+
 
 .album-info {
     display: flex;
@@ -202,7 +232,7 @@ div {
     width: 240px;
     box-shadow: 4px 4px #444444;
     margin: 2rem;
-    transition:.2s;
+    transition: .2s;
 }
 
 .album-art:hover {
@@ -244,4 +274,55 @@ footer {
 .icon:hover {
     color: #A5C5A1;
     transition: 0.2s;
+}
+
+
+@media only screen and (max-width: 600px) {
+    .dot {
+        display: none;
+    }
+
+    .vertical-separator {
+        display: none;
+    }
+
+    .title {
+        font-size: 32px;
+        text-align: left;
+    }
+
+    .nav {
+        padding: 0;
+    }
+
+    .nav-title {
+        padding: 10px 40px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        
+        align-items: center;
+    }
+
+    .nav-links {
+        padding:1rem;
+        background-color: #CFEDCB;
+        flex-direction: column;
+    }
+    .nav-child {
+        text-align: right;
+    }
+
+    .nav-item .a {
+        display: flex;
+        justify-content: end;
+        text-align: left;
+    }
+    .nav-item {
+        justify-content: space-between;
+    }
+
+    .burger-menu {
+        display: flex;
+    }
 }
