@@ -329,6 +329,10 @@ footer {
         justify-content: end;
     }
 
+    .menu-hidden {
+        display: none;
+    }
+
     .burger-menu {
         display: flex;
     }
